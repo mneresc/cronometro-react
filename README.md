@@ -11,9 +11,9 @@ Abrir [http://localhost:3000](http://localhost:3000) no browser.
 
 ### `npm test`
 
-Rodar os testes.\
+Rodar os testes.
 
 
 ### `npm run build`
 
-Gerar build de produção.\
+Gerar build de produção.
