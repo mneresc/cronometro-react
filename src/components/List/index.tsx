@@ -3,7 +3,8 @@ import Item from './Item/item';
 import style from './list.module.scss'
 
 type Props = {
-    tasks: ITask[] | []
+    tasks: ITask[] | [],
+    selectTask: (selectedItem: ITask) => void
 };
 
 function List(props: Props) {
@@ -14,7 +15,15 @@ function List(props: Props) {
             <ul>
                 {props.tasks.map((task, index) =>
                 (
-                    <Item key={index} taskName={task.taskName} time={task.time} />
+                    <Item key={index}
+                        taskName={task.taskName}
+                        time={task.time}
+                        selected={task.selected}
+                        id={task.id}
+                        done={task.done} 
+                        selectTask={props.selectTask}
+
+                        />
                 )
                 )}
             </ul>
