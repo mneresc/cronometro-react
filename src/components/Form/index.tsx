@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../Button";
 import { ITask } from "../types/task";
 import style from './form.module.scss'
+import {v4 as uuidv4} from 'uuid';
 
 type Props = {
     setTask: React.Dispatch<React.SetStateAction<ITask[]>>
@@ -24,7 +25,7 @@ class Form extends React.Component<Props> {
                 ...this.state,
                 selected: false,
                 done: false,
-                id:''
+                id: uuidv4()
               }
             ]
           )
