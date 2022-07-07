@@ -1,14 +1,18 @@
 import React from 'react'
-import { timeToSeconds } from '../../../common/util/date'
 import style from './clock.module.scss'
 
-export default function Clock() {
-    // timeToSeconds()
+type Props = {
+    time?: number
+}
+
+export default function Clock({ time = 0 }: Props) {
+
+    
     return (
         <React.Fragment>
             <span className={style.timerNumber}>0</span>
             <span className={style.timerNumber}>0</span>
-            <span  className={style.timerDivision}>:</span>
+            <span className={style.timerDivision}>:</span>
             <span className={style.timerNumber}>0</span>
             <span className={style.timerNumber}>0</span>
         </React.Fragment>
