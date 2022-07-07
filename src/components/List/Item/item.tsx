@@ -1,5 +1,5 @@
-import { ITask } from '../../types/task'
-import style from '../list.module.scss'
+import { ITask } from '../../../types/task'
+import style from './item.module.scss'
 
 interface Props extends ITask {
     selectTask: (selectedItem: ITask) => void

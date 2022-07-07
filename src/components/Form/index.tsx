@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../Button";
-import { ITask } from "../types/task";
+import { ITask } from "../../types/task";
 import style from './form.module.scss'
 import {v4 as uuidv4} from 'uuid';
 
